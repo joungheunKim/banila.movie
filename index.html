@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- style.css를 받아오는 링크 -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- app.js 연결 defer는 브라우저가 페이지의 파싱을 모두 끝내면 스크립트가 실행됨 -->
+    <script defer src="app.js"></script>
+
+    <title>바닐라 js로 웹페이지 만들기</title>
+    
+  </head>
+  <body>
+    <div>
+      <h1 class="main-title">바닐라 js 영화 추천</h1>
+    </div>
+
+    <div class="search-css" id="search-box">
+      <input type="text" maxlength="12" placeholder="영화 제목을 넣어 주세요" />
+      <button >검색</button>
+    </div>
+
+    <div class="mycards">
+      <form class="card-box">
+        <div>
+          <img
+            class="card-img"
+            src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+          />
+        </form>
+        <div class="card-body">
+          <h5 class="card-title">영화 제목이 들어갑니다</h5>
+          <p class="vote-average">영화평점이 들어갑니다</p>
+          <p class="card-overview">여기에 영화에 대한 설명이 들어갑니다.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
